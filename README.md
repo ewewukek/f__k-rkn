@@ -1,1 +1,1 @@
-shinks ips to /16 networks and writes them to stdout as openvpn's push route commands
+shrinks ips to /16 networks and writes them to stdout as openvpn's push route commands
