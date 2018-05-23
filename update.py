@@ -11,7 +11,7 @@ def parse_file(filename):
     for line in open(filename):
         net = ipaddress.ip_network(unicode(line.rstrip()))
         if not net.is_global:
-            sys.stderr.write('skipping non-global ip/network '+net+'\n')
+            sys.stderr.write('skipping non-global ip/network '+str(net)+'\n')
             continue
         if net.prefixlen < 16:
             big_networks.append(net)
